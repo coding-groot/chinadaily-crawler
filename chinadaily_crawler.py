@@ -5,7 +5,7 @@ import sqlite3
 
 search=input("검색어를 입력하세요 ")
 date_start=input("시작날짜를 입력하세요(Format:YYYY-MM-DD)")
-date_finish=input("시작날짜를 입력하세요(Format:YYYY-MM-DD)")
+date_finish=input("날짜를 입력하세요(Format:YYYY-MM-DD)")
 op=input("duplication removal을 on or off?")
 data=[]
 url=f'http://newssearch.chinadaily.com.cn/rest/cn/search?publishedDateFrom={date_start}&publishedDateTo={date_finish}&fullMust={search}&sort=dp&duplication={op}&page=1&type=&channel=&source='
